@@ -1,0 +1,10 @@
+public void startUpOtherApp (Context c, PackageManager pm)
+{
+	Intent fliterIntent = new Intent(Intent.ACTION_MAIN);
+	fliterIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+	List<ResolveInfo> activities = pm.queryIntentActivitise(fliterIntent, 0);//这里是把所有的启动activity全都找出来
+	//可以有条件的过滤出来，这个灯下再说
+
+	
+} 
